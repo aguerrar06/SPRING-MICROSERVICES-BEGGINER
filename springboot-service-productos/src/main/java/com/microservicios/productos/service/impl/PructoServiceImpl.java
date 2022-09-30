@@ -1,0 +1,31 @@
+package com.microservicios.productos.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.microservicios.productos.entity.Producto;
+import com.microservicios.productos.repository.ProductoRepository;
+import com.microservicios.productos.service.ProductoService;
+
+@Service
+public class PructoServiceImpl implements ProductoService {
+
+	@Autowired
+	private ProductoRepository productoRepository;
+	
+	@Override
+	@Transactional(readOnly = true)
+	public List<Producto> findAll() {
+		return (List<Producto>) this.productoRepository.findAll();
+	}
+
+	@Override
+	@Transactional
+	public Producto findById(Long id) {
+		return this.productoRepository.findById(id).orElse(null);
+	}
+
+}

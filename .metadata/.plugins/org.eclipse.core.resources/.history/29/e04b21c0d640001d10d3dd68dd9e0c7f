@@ -1,0 +1,5 @@
+package com.microservicios.productos.controller;
+
+public class ProductoController {
+
+}

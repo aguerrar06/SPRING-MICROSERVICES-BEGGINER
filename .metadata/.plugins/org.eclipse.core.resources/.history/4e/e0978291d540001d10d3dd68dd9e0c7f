@@ -1,0 +1,5 @@
+package com.microservicios.productos.service.impl;
+
+public class PructoServiceImpl {
+
+}

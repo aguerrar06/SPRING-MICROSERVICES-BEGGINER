@@ -1,0 +1,5 @@
+package com.microservicios.productos.service;
+
+public class ProductoService {
+
+}

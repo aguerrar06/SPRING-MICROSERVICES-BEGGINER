@@ -1,0 +1,5 @@
+package com.microservicios.productos.repository;
+
+public interface ProductoRepository {
+
+}

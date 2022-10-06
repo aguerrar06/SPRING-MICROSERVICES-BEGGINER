@@ -1,8 +1,13 @@
 package com.microservicios.item.entity;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter @Setter
 public class Item {
 
 	private Producto producto;

@@ -32,5 +32,4 @@ public class Producto implements Serializable {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createAt;
 	
-	
 }

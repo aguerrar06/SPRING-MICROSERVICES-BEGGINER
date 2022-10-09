@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -31,5 +32,8 @@ public class Producto implements Serializable {
 	@Column(name = "create_at")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createAt;
+	
+	@Transient // Indica que es un campo que es independiente de la base de datos
+	private Integer puerto;
 	
 }

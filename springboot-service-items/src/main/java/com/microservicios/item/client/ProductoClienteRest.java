@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.microservicios.item.entity.Producto;
 
-@FeignClient(name = "servicio-productos", url = "http://localhost:8001")
+// La siguiente linea es si no usamos un balanceador de carga como Ribbon
+// @FeignClient(name = "servicio-productos", url = "http://localhost:8001")
+@FeignClient(name = "servicio-productos")
 public interface ProductoClienteRest {
 
 	/* 

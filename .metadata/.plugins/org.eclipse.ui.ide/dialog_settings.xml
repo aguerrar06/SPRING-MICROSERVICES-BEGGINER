@@ -37,6 +37,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Alvaro\Cursos\SpringMicroServices\springboot-service-productos"/>
+			<item value="D:\Alvaro\Cursos\SpringMicroServices\springboot-service-items"/>
 			<item value="D:\Alvaro\Programacion\SpringBoot\curso-spring-microservicios\springboot-service-productos"/>
 			<item value="D:\Alvaro\Programacion\SpringBoot\curso-spring-microservicios\springboot-service-items"/>
 		</list>
